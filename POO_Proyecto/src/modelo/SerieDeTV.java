@@ -10,8 +10,13 @@ public class SerieDeTV extends ContenidoAudiovisual {
         this.temporadas = temporadas;
     }
 
+    public List<Temporada> getTemporadas() {
+        return temporadas;
+    }
+
     @Override
     public void mostrarInformacion() {
+        System.out.println("Serie de TV:");
         System.out.println("Título: " + getTitulo() + ", Año: " + getAño());
         System.out.println("Temporadas:");
         for (Temporada temporada : temporadas) {

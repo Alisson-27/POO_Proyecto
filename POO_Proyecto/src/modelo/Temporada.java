@@ -2,14 +2,14 @@ package modelo;
 
 public class Temporada {
     private int numero;
-    private int cantEpisodios;
+    private int duracion; // Ejemplo de campo extra
 
-    public Temporada(int numero, int cantEpisodios) {
+    public Temporada(int numero, int duracion) {
         this.numero = numero;
-        this.cantEpisodios = cantEpisodios;
+        this.duracion = duracion;
     }
 
     public void mostrarInformacion() {
-        System.out.println("Temporada " + numero + ", Episodios: " + cantEpisodios);
+        System.out.println("Temporada número " + numero + ", duración: " + duracion);
     }
 }
